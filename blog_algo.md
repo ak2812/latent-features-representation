@@ -21,6 +21,7 @@ One major limitation of LSI is that the topics are not always interpretable. In 
 pLSA takes a probabilistic approach to represent the data in latent space. LSI tries to find the principal components of the word vectors using SVD while pLSA uses the idea that a document is a mixture of topic distributions, the distribution of topics is different for different documents and each topic corresponds to a distribution over words. Here, topics are the latent variables and words and documents are the observed variables and hence the formulation is based on [latent class model](https://en.wikipedia.org/wiki/Latent_class_model). pLSA models the probability of multivariate variable (T, D) where D corresponds to documents and T corresponds to terms as a mixture of conditionally independent multinomial distribution i.e., it assumes that T is independent of D given topics C. It finds the distribution P(T, D) such that for any t, d, P(t, d) corresponds to the matrix cell in the term-document matrix.  Formally, the joint probability of co-occurrence of a word and a document is:
 
 ![equation](https://latex.codecogs.com/gif.latex?P(t,d)=P(d)\sum&space;_{c}P(c|d)P(t|c))
+
 ![equation](https://latex.codecogs.com/gif.latex?P(t,d)=&space;\sum&space;_{c}P(c)P(d|c)P(t|c))
 
 
