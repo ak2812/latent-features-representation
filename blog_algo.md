@@ -45,4 +45,8 @@ A random sample θ representing the topic distribution of a document is drawn fr
 LSI uses linear algebra method SVD to transform the higher dimensional term-document matrix into a lower dimensional latent space. It performs better than the naive vector representation, it's a simple unsupervised technique which can capture synonyms really well but not polysemy so well. It's language independent and the latent features are not always interpretable. pLSA is a generative model which provides the probabilistic interpretation of co-occurrence of documents and words. It takes care of polysemy and synonymy better by using mixture models to define the probability distributions over topics and words. The computation grows linearly with the documents and it doesn't work well with new documents. LDA uses Dirichlet priors for documents and words and generalizes well with the new documents but cannot capture correlations between the topics. All these methods are the alternative to feature representation and if applied before the classification process, they can help in improving accuracy. 
 
 ### References
-[1 https://en.wikipedia.org/wiki/Latent_semantic_analysis](https://en.wikipedia.org/wiki/Latent_semantic_analysis)
+[[1] https://en.wikipedia.org/wiki/Latent_semantic_analysis](https://en.wikipedia.org/wiki/Latent_semantic_analysis)
+
+[[2] https://en.wikipedia.org/wiki/Probabilistic_latent_semantic_analysis](https://en.wikipedia.org/wiki/Probabilistic_latent_semantic_analysis)
+
+[[3] https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation](https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation)
